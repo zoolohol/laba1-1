@@ -53,12 +53,6 @@ public:
 
     static string cut_num(unsigned int i, const string& s);
 
-    void print_map();
-
-    void print_vector();
-
-    static void print(any _data);
-
 };
 
 #endif //UNTITLED_JSON_H
