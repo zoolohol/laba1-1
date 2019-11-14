@@ -57,27 +57,27 @@ include CMakeFiles/Json.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Json.dir/flags.make
 
-CMakeFiles/Json.dir/sources/source.cpp.o: CMakeFiles/Json.dir/flags.make
-CMakeFiles/Json.dir/sources/source.cpp.o: ../sources/source.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Json.dir/sources/source.cpp.o"
-	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Json.dir/sources/source.cpp.o -c /cygdrive/c/Git/lab-01-parser/sources/source.cpp
+CMakeFiles/Json.dir/sources/Json.cpp.o: CMakeFiles/Json.dir/flags.make
+CMakeFiles/Json.dir/sources/Json.cpp.o: ../sources/Json.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Json.dir/sources/Json.cpp.o"
+	/usr/bin/c++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Json.dir/sources/Json.cpp.o -c /cygdrive/c/Git/lab-01-parser/sources/Json.cpp
 
-CMakeFiles/Json.dir/sources/source.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Json.dir/sources/source.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Git/lab-01-parser/sources/source.cpp > CMakeFiles/Json.dir/sources/source.cpp.i
+CMakeFiles/Json.dir/sources/Json.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Json.dir/sources/Json.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Git/lab-01-parser/sources/Json.cpp > CMakeFiles/Json.dir/sources/Json.cpp.i
 
-CMakeFiles/Json.dir/sources/source.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Json.dir/sources/source.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Git/lab-01-parser/sources/source.cpp -o CMakeFiles/Json.dir/sources/source.cpp.s
+CMakeFiles/Json.dir/sources/Json.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Json.dir/sources/Json.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Git/lab-01-parser/sources/Json.cpp -o CMakeFiles/Json.dir/sources/Json.cpp.s
 
 # Object files for target Json
 Json_OBJECTS = \
-"CMakeFiles/Json.dir/sources/source.cpp.o"
+"CMakeFiles/Json.dir/sources/Json.cpp.o"
 
 # External object files for target Json
 Json_EXTERNAL_OBJECTS =
 
-libJsond.a: CMakeFiles/Json.dir/sources/source.cpp.o
+libJsond.a: CMakeFiles/Json.dir/sources/Json.cpp.o
 libJsond.a: CMakeFiles/Json.dir/build.make
 libJsond.a: CMakeFiles/Json.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libJsond.a"

@@ -17,16 +17,6 @@
 					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="test">
 				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
 				<Option type="4"/>
@@ -48,10 +38,10 @@
 				</MakeCommands>
 			</Target>
 			<Target title="source">
-				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libsourced.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/source.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="2"/>
+				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
@@ -70,7 +60,39 @@
 				</MakeCommands>
 			</Target>
 			<Target title="source/fast">
-				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libsourced.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/source.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 source/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Json">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libJsond.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -85,7 +107,29 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 source/fast"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Json"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Json/fast">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libJsond.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Json/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -138,6 +182,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/cygdrive/c/Git/lab-01-parser/sources/Json.cpp">
+			<Option target="Json"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/sources/source.cpp">
 			<Option target="source"/>
 		</Unit>

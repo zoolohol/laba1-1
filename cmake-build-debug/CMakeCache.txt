@@ -266,6 +266,12 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf.exe
 ProcessorCount_cmd_sysctl:FILEPATH=ProcessorCount_cmd_sysctl-NOTFOUND
 
 //Value Computed by CMake
+Project_BINARY_DIR:STATIC=/cygdrive/c/Git/lab-01-parser/cmake-build-debug
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/cygdrive/c/Git/lab-01-parser
+
+//Value Computed by CMake
 source_BINARY_DIR:STATIC=/cygdrive/c/Git/lab-01-parser/cmake-build-debug
 
 //Value Computed by CMake
@@ -440,6 +446,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname.exe
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding nlohmann_json
+FIND_PACKAGE_MESSAGE_DETAILS_nlohmann_json:INTERNAL=[/home/zamot/.hunter/_Base/70287b1/0a1854b/b499eae/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake][v3.3.0()]
 HUNTER_CACHED_BUILD_SHARED_LIBS:INTERNAL=
 HUNTER_CACHED_CONFIGURATION_TYPES:INTERNAL=Release;Debug
 HUNTER_CACHED_ROOT:INTERNAL=/home/zamot/.hunter

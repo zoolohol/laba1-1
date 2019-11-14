@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /cygdrive/c/Git/lab-01-parser/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -88,6 +77,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -135,6 +135,19 @@ source/fast:
 .PHONY : source/fast
 
 #=============================================================================
+# Target rules for targets named Json
+
+# Build rule for target.
+Json: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Json
+.PHONY : Json
+
+# fast build rule for target.
+Json/fast:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/build
+.PHONY : Json/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -146,6 +159,33 @@ tests: cmake_check_build_system
 tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
+
+sources/Json.o: sources/Json.cpp.o
+
+.PHONY : sources/Json.o
+
+# target to build an object file
+sources/Json.cpp.o:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/Json.cpp.o
+.PHONY : sources/Json.cpp.o
+
+sources/Json.i: sources/Json.cpp.i
+
+.PHONY : sources/Json.i
+
+# target to preprocess a source file
+sources/Json.cpp.i:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/Json.cpp.i
+.PHONY : sources/Json.cpp.i
+
+sources/Json.s: sources/Json.cpp.s
+
+.PHONY : sources/Json.s
+
+# target to generate assembly for a file
+sources/Json.cpp.s:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/Json.cpp.s
+.PHONY : sources/Json.cpp.s
 
 sources/source.o: sources/source.cpp.o
 
@@ -207,11 +247,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... edit_cache"
 	@echo "... source"
+	@echo "... rebuild_cache"
+	@echo "... Json"
 	@echo "... tests"
+	@echo "... sources/Json.o"
+	@echo "... sources/Json.i"
+	@echo "... sources/Json.s"
 	@echo "... sources/source.o"
 	@echo "... sources/source.i"
 	@echo "... sources/source.s"

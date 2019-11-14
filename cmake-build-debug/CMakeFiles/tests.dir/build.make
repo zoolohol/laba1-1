@@ -80,7 +80,6 @@ tests_EXTERNAL_OBJECTS =
 tests.exe: CMakeFiles/tests.dir/tests/test.cpp.o
 tests.exe: CMakeFiles/tests.dir/build.make
 tests.exe: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/libgtest_maind.a
-tests.exe: libsourced.a
 tests.exe: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/libgtestd.a
 tests.exe: CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests.exe"
