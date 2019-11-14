@@ -5,7 +5,7 @@
 		<Option title="source"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\tools\;CMake Files\tools\gate\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\home\;CMake Files\..\..\..\..\home\zamot\;CMake Files\..\..\..\..\home\zamot\.hunter\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\modules\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\configs\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\projects\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\projects\GTest\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\scripts\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\GTest\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_3rdParty\;CMake Files\cmake-build-debug\_3rdParty\Hunter\;CMake Files\cmake-build-debug\_3rdParty\Hunter\toolchain\;CMake Files\cmake-build-debug\_3rdParty\Hunter\config-id\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\tools\;CMake Files\tools\gate\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\home\;CMake Files\..\..\..\..\home\zamot\;CMake Files\..\..\..\..\home\zamot\.hunter\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\modules\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\configs\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\projects\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\projects\nlohmann_json\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\projects\GTest\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\scripts\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\GTest\;CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\nlohmann_json\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_3rdParty\;CMake Files\cmake-build-debug\_3rdParty\Hunter\;CMake Files\cmake-build-debug\_3rdParty\Hunter\toolchain\;CMake Files\cmake-build-debug\_3rdParty\Hunter\config-id\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
@@ -17,119 +17,11 @@
 					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test">
-				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="source">
-				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/source.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 source"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="source/fast">
-				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/source.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 source/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Json">
-				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libJsond.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Json"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="Json/fast">
-				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libJsond.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Json/fast"/>
 					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -181,9 +73,164 @@
 					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="main">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Json">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libJsond.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Json"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Json/fast">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/libJsond.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 Json/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/source.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 source"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="source/fast">
+				<Option output="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/source.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/cygdrive/c/Git/lab-01-parser/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 source/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/cygdrive/c/Git/lab-01-parser/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Git/lab-01-parser/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/sources/Json.cpp">
 			<Option target="Json"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/lab-01-parser/sources/main.cpp">
+			<Option target="main"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/sources/source.cpp">
 			<Option target="source"/>
@@ -389,6 +436,9 @@
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_register_dependency.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\modules\"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_report_broken_package.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\modules\"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_sanity_checks.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\modules\"/>
 		</Unit>
@@ -434,6 +484,9 @@
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/configs/default.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\configs\"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/projects/nlohmann_json/hunter.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\projects\nlohmann_json\"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/projects/GTest/hunter.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\Download\Hunter\0.23.218\9a3594a\Unpacked\cmake\projects\GTest\"/>
 		</Unit>
@@ -457,6 +510,15 @@
 		</Unit>
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/GTest/GTestTargets.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\nlohmann_json\"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Git/lab-01-parser/../../../../home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\home\zamot\.hunter\_Base\9a3594a\0a1854b\c351cc1\Install\lib\cmake\nlohmann_json\"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Git/lab-01-parser/cmake-build-debug/_3rdParty/Hunter/toolchain/toolchain.info.NOLF">
 			<Option virtualFolder="CMake Files\cmake-build-debug\_3rdParty\Hunter\toolchain\"/>

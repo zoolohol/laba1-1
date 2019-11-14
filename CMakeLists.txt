@@ -23,9 +23,11 @@ project(source)
 string(APPEND CMAKE_CXX_FLAGS " -pedantic -Werror -Wall -Wextra")
 string(APPEND CMAKE_CXX_FLAGS " -Wno-unused-command-line-argument")
 string(APPEND CMAKE_CXX_FLAGS " -Wshadow -Wnon-virtual-dtor")
-
+hunter_add_package(nlohmann_json)
 hunter_add_package(GTest)
+
 find_package(GTest CONFIG REQUIRED)
+find_package(nlohmann_json CONFIG REQUIRED)
 
 add_library(Json STATIC
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/Json.cpp
@@ -33,8 +35,13 @@ add_library(Json STATIC
 add_executable(tests
         ${CMAKE_CURRENT_SOURCE_DIR}/tests/test.cpp
         )
-add_executable(source ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp)
-target_link_libraries(source Json)
+add_executable(source
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
+        )
+add_executable(main
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp
+        )
+
 target_include_directories(Json
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
         $<INSTALL_INTERFACE:include>
@@ -44,6 +51,8 @@ target_include_directories(tests
         )
 
 target_link_libraries(tests GTest::main)
+target_link_libraries(main PUBLIC nlohmann_json::nlohmann_json)
+target_link_libraries(source Json)
 
 enable_testing()
 add_test(NAME unit_tests COMMAND tests)
