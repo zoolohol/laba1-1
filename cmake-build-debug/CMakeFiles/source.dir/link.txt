@@ -1,0 +1,2 @@
+/usr/bin/ar.exe qc libsourced.a  CMakeFiles/source.dir/sources/source.cpp.o
+/usr/bin/ranlib.exe libsourced.a
