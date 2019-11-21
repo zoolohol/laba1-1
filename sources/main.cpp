@@ -1,3 +1,4 @@
+//Copyright 2019 <LinkIvan333>
 #include <iostream>
 #include <fstream>
 #include <nlohmann/json.hpp>
