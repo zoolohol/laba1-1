@@ -50,7 +50,7 @@ target_include_directories(tests
         PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
         )
 
-target_link_libraries(tests GTest::main)
+target_link_libraries(tests Json GTest::main)
 target_link_libraries(main PUBLIC nlohmann_json::nlohmann_json)
 target_link_libraries(source Json)
 

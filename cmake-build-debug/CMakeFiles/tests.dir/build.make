@@ -79,6 +79,7 @@ tests_EXTERNAL_OBJECTS =
 
 tests.exe: CMakeFiles/tests.dir/tests/test.cpp.o
 tests.exe: CMakeFiles/tests.dir/build.make
+tests.exe: libJsond.a
 tests.exe: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/libgtest_maind.a
 tests.exe: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/libgtestd.a
 tests.exe: CMakeFiles/tests.dir/link.txt
