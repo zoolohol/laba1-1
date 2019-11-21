@@ -23,8 +23,4 @@ int main() {
     o << "]\n";
     o.close();
     std::ifstream in1("file2.json");
-    json new_obj;
-    in1 >> new_obj;
-    in1.close();
-    std::cout << new_obj.dump(5);
 }
