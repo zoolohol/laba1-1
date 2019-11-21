@@ -5,8 +5,7 @@ language:
 services:
 - docker
 
-
- jobs:
+jobs:
   include:
   - name: "checks"
     script:
@@ -21,5 +20,9 @@ services:
     # The bot has gone...
     # - docker run --env-file .env -v `pwd`:`pwd` -w `pwd` -t rusdevops/bootstrap-cpp scripts/duplication.sh
 
- notifications:
+notifications:
     email: false
+
+branches:
+  except:
+  - master
