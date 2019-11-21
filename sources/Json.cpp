@@ -211,8 +211,8 @@ void Json::create_map(const string& s) {
             string num = cut_num(i, s);
             i += num.length();
             double d = stod(num);
-            if (d - (int) d == 0) {
-                int n = (int)d;
+            if (d - static_cast<int>(d) == 0) {
+                int n = static_cast<int>(d);
                 this->json_map[key] = n;
             } else {
                 this->json_map[key] = d;
