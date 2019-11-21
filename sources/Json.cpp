@@ -96,7 +96,8 @@ string Json::read_word(unsigned int &i, const string& s) {
         i++;
         st = i;
     }
-    else throw std::logic_error("string isn't valid!");
+    else
+        throw std::logic_error("string isn't valid!");
     while (s[i] != '"') i++;
     key = s.substr(st, i - st);
     i++;
