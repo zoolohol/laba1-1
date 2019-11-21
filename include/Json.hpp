@@ -31,7 +31,7 @@ private:
     void create_map(const string& s);
 
 public:
-    Json(const string& s);
+    explicit Json(const string& s);
 
     bool is_array() const;
 
