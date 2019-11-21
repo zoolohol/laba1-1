@@ -47,7 +47,7 @@ Json Json::parseFile(const std::string& path_to_file){
     json.open(path_to_file);
     string s = "";
     string line;
-    while(!json.eof()) {
+    while (!json.eof()) {
         std::getline(json, line);
         s += line;
     }
@@ -56,7 +56,7 @@ Json Json::parseFile(const std::string& path_to_file){
 }
 
 unsigned int Json::skip_spaces(unsigned int i, const string& s) {
-    while(s[i] == ' ' || s[i] == ',') {
+    while (s[i] == ' ' || s[i] == ',') {
         i++;
     }
     return i;
@@ -71,12 +71,12 @@ unsigned int Json::find_end(unsigned int i, const string& s) {
         key1 = '[';
         key2 = ']';
     }
-    while(cnt_close != cnt_open && i < s.length()) {
+    while (cnt_close != cnt_open && i < s.length()) {
         i++;
         if (s[i] == key1) cnt_open++;
         else if (s[i] == key2) cnt_close++;
     }
-    if(cnt_close != cnt_open) return s.length();
+    if (cnt_close != cnt_open) return s.length();
     return i;
 }
 
@@ -104,14 +104,13 @@ string Json::read_word(unsigned int &i, const string& s) {
 }
 
 void Json::create_vector(const string& s) {
-
     unsigned int i = 1;
     while (i < s.find_last_of(']')) {
         skip_spaces(i, s);
         if (s[i] == '{') {
             string s1;
             unsigned int n = find_end(i, s);
-            if(n == s.length())
+            if (n == s.length())
                 throw std::logic_error("string is not valid");
             s1 = s.substr(i, n - i + 1);
             Json obj(s1);
