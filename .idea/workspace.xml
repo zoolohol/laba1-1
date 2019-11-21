@@ -3,16 +3,28 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="source" targetName="source" />
+<<<<<<< HEAD
+=======
+      <config projectName="source" targetName="main" />
+      <config projectName="source" targetName="Json" />
+>>>>>>> test3
       <config projectName="source" targetName="tests" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d0f06e6d-3982-4321-bb9f-798cc847b6bc" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="d0f06e6d-3982-4321-bb9f-798cc847b6bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    </list>
+>>>>>>> test3
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,15 +38,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="OCResolveContextSettings">
-    <option name="configuration" value="0-template" />
-  </component>
   <component name="ProjectId" id="1TcCwsPn8OcMQtC9KcZMWt5Xn0I" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.advertisement.text.has.clang-format" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -49,7 +59,17 @@
     </option>
   </component>
   <component name="RunManager" selected="CMake Application.tests">
-    <configuration name="source" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="source" TARGET_NAME="source" CONFIG_NAME="Debug">
+    <configuration name="Json" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="source" TARGET_NAME="Json" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="source" TARGET_NAME="main" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="source" RUN_TARGET_NAME="main">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="source" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="source" TARGET_NAME="source" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="source" RUN_TARGET_NAME="source">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -60,6 +80,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="CMake Application.Json" />
+      <item itemvalue="CMake Application.main" />
       <item itemvalue="CMake Application.source" />
       <item itemvalue="CMake Application.tests" />
     </list>
@@ -75,6 +97,12 @@
       <option name="presentableId" value="Default" />
       <updated>1573750238041</updated>
       <workItem from="1573750239635" duration="1281000" />
+      <workItem from="1573756563007" duration="3199000" />
+      <workItem from="1573760319465" duration="754000" />
+      <workItem from="1573761082086" duration="759000" />
+      <workItem from="1573765833506" duration="72000" />
+      <workItem from="1574343991926" duration="12732000" />
+      <workItem from="1574358464108" duration="6511000" />
     </task>
     <servers />
   </component>

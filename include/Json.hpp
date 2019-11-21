@@ -1,5 +1,6 @@
-#ifndef UNTITLED_JSON_H
-#define UNTITLED_JSON_H
+//Copyright 2019 <LinkIvan333>
+#ifndef INCLUDE_JSON_HPP_
+#define INCLUDE_JSON_HPP_
 
 #include <any>
 #include <string>
@@ -30,8 +31,7 @@ private:
     void create_map(const string& s);
 
 public:
-
-    Json(const string& s);
+    explicit Json(const string& s);
 
     bool is_array() const;
 
@@ -52,13 +52,6 @@ public:
     static unsigned int find_end(unsigned int i, const string& s);
 
     static string cut_num(unsigned int i, const string& s);
-
-    void print_map();
-
-    void print_vector();
-
-    static void print(any _data);
-
 };
 
-#endif //UNTITLED_JSON_H
+#endif // INCLUDE_JSON_HPP_

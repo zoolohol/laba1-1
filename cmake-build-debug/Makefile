@@ -67,17 +67,6 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -88,6 +77,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/ctest.exe --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +122,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+#=============================================================================
+# Target rules for targets named Json
+
+# Build rule for target.
+Json: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Json
+.PHONY : Json
+
+# fast build rule for target.
+Json/fast:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/build
+.PHONY : Json/fast
+
+#=============================================================================
 # Target rules for targets named source
 
 # Build rule for target.
@@ -134,18 +173,59 @@ source/fast:
 	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/build
 .PHONY : source/fast
 
-#=============================================================================
-# Target rules for targets named tests
+sources/Json.o: sources/Json.cpp.o
 
-# Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
+.PHONY : sources/Json.o
 
-# fast build rule for target.
-tests/fast:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+# target to build an object file
+sources/Json.cpp.o:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/Json.cpp.o
+.PHONY : sources/Json.cpp.o
+
+sources/Json.i: sources/Json.cpp.i
+
+.PHONY : sources/Json.i
+
+# target to preprocess a source file
+sources/Json.cpp.i:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/Json.cpp.i
+.PHONY : sources/Json.cpp.i
+
+sources/Json.s: sources/Json.cpp.s
+
+.PHONY : sources/Json.s
+
+# target to generate assembly for a file
+sources/Json.cpp.s:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/Json.cpp.s
+.PHONY : sources/Json.cpp.s
+
+sources/main.o: sources/main.cpp.o
+
+.PHONY : sources/main.o
+
+# target to build an object file
+sources/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.o
+.PHONY : sources/main.cpp.o
+
+sources/main.i: sources/main.cpp.i
+
+.PHONY : sources/main.i
+
+# target to preprocess a source file
+sources/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.i
+.PHONY : sources/main.cpp.i
+
+sources/main.s: sources/main.cpp.s
+
+.PHONY : sources/main.s
+
+# target to generate assembly for a file
+sources/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/sources/main.cpp.s
+.PHONY : sources/main.cpp.s
 
 sources/source.o: sources/source.cpp.o
 
@@ -208,10 +288,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... edit_cache"
-	@echo "... source"
 	@echo "... tests"
+	@echo "... main"
+	@echo "... edit_cache"
+	@echo "... Json"
+	@echo "... source"
+	@echo "... test"
+	@echo "... sources/Json.o"
+	@echo "... sources/Json.i"
+	@echo "... sources/Json.s"
+	@echo "... sources/main.o"
+	@echo "... sources/main.i"
+	@echo "... sources/main.s"
 	@echo "... sources/source.o"
 	@echo "... sources/source.i"
 	@echo "... sources/source.s"

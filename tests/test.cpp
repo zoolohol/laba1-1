@@ -1,7 +1,12 @@
+//Copyright 2019 <LinkIvan333>
 #include <gtest/gtest.h>
 #include <Json.hpp>
 TEST(Parse, Text){
-    std::string json = "{ \"lastname\" : \"Ivanov\" , \"firstname\" : \"Ivan\" ,  \"age\" : 25 , \"islegal\" : false , \"marks\" : [ 4 , 5 , 5 , 5 , 2 , 3 ] , \"address\" : {  \"city\" : \"Moscow\" ,  \"street\" : \"Vozdvijenka\" } })";
+    std::string json = "{ \"lastname\" : \"Ivanov\" , \"firstname\" : \"Ivan\" "
+                       ",  \"age\" : 25 , \"islegal\" : false , \"marks\""
+                       " : [ 4 , 5 , 5 , 5 , 2 , 3 ] , \"address\" : {  "
+                       "\"city\" :"" \"Moscow\" ,  \"street\" :"
+                                   " \"Vozdvijenka\" } })";
     Json object = Json::parse(json);
     EXPECT_EQ(std::any_cast<std::string>(object["lastname"]), "Ivanov");
     EXPECT_EQ(std::any_cast<bool>(object["islegal"]), false);
@@ -11,7 +16,8 @@ TEST(Parse, Text){
     EXPECT_EQ(std::any_cast<int>(marks[0]), 4);
     EXPECT_EQ(std::any_cast<int>(marks[1]), 5);
 
-    auto address = std::any_cast<std::map<std::string, std::any>>(object["address"]);
+    auto address = std::any_cast<std::map<std::string,
+    std::any>>(object["address"]);
     EXPECT_EQ(std::any_cast<std::string>(address["city"]), "Moscow");
     EXPECT_EQ(std::any_cast<std::string>(address["street"]), "Vozdvijenka");
 }

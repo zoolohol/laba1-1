@@ -32,6 +32,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Compiler/GNU-C.cmake"
   "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Compiler/GNU-CXX.cmake"
   "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Compiler/GNU.cmake"
+  "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/FindPackageHandleStandardArgs.cmake"
+  "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/FindPackageMessage.cmake"
   "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Platform/CYGWIN-GNU-C.cmake"
   "/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/share/cmake-3.14.5/Modules/Platform/CYGWIN-GNU-CXX.cmake"
@@ -45,6 +47,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/GTest/GTestTargets-debug.cmake"
   "/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/GTest/GTestTargets-release.cmake"
   "/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/GTest/GTestTargets.cmake"
+  "/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake"
+  "/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake"
+  "/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake"
   "/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/config.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/Hunter"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/configs/default.cmake"
@@ -111,6 +116,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_private_data_password.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_read_http_credentials.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_register_dependency.cmake"
+  "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_report_broken_package.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_sanity_checks.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_save_to_cache.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_set_config_location.cmake"
@@ -126,6 +132,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_upload_to_custom_server.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/modules/hunter_user_error.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/projects/GTest/hunter.cmake"
+  "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/cmake/projects/nlohmann_json/hunter.cmake"
   "/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked/scripts/create-toolchain-info.cmake"
   )
 
@@ -145,6 +152,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/source.dir/DependInfo.cmake"
   "CMakeFiles/tests.dir/DependInfo.cmake"
+  "CMakeFiles/main.dir/DependInfo.cmake"
+  "CMakeFiles/Json.dir/DependInfo.cmake"
+  "CMakeFiles/source.dir/DependInfo.cmake"
   )
