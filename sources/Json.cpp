@@ -143,13 +143,13 @@ void Json::create_vector(const string& s) {
             Json obj(s1);
             this->json_arr.emplace_back(obj.json_arr);
             i += s1.length();
-        } else if (std::isdigit(static_cast<int>(s[i]))||
-        (s[i] == '-'  && std::isdigit(static_cast<int>(s[i + 1])))) {
+        } else if (std::isdigit(static_cast<unsigned char>(s[i]))||
+        (s[i] == '-'  && std::isdigit(static_cast<unsigned char>(s[i + 1])))) {
             string num = cut_num(i, s);
             i += num.length();
             double d = stod(num);
-            if (d - (int) d == 0) {
-                int n = (int)d;
+            if (d - static_cast<int>(d) == 0) {
+                int n = static_cast<int>(d);
                 this->json_arr.emplace_back(n);
             } else {
                 this->json_arr.emplace_back(d);
