@@ -117,8 +117,7 @@ void Json::create_vector(const string& s) {
             Json obj(s1);
             this->json_arr.emplace_back(obj.json_map);
             i += s1.length();
-        }
-        else if (s[i] == '\"') {
+        } else if (s[i] == '\"') {
             string word;
             word = read_word(i, s);
             i = skip_spaces(i, s);
