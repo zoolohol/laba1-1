@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/cygdrive/c/Git/lab-01-parser/tests/test.cpp" "/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/tests.dir/tests/test.cpp.o"
+  "/cygdrive/c/Git/lab-01-parser/sources/source.cpp" "/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/parser.dir/sources/source.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

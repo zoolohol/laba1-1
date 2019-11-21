@@ -56,6 +56,40 @@ CMAKE_BINARY_DIR = /cygdrive/c/Git/lab-01-parser/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -66,6 +100,18 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target test
 test:
@@ -122,19 +168,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named source
-
-# Build rule for target.
-source: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 source
-.PHONY : source
-
-# fast build rule for target.
-source/fast:
-	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/build
-.PHONY : source/fast
-
-#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -147,13 +180,40 @@ tests/fast:
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 .PHONY : tests/fast
 
+#=============================================================================
+# Target rules for targets named parser
+
+# Build rule for target.
+parser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 parser
+.PHONY : parser
+
+# fast build rule for target.
+parser/fast:
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
+.PHONY : parser/fast
+
+#=============================================================================
+# Target rules for targets named Json
+
+# Build rule for target.
+Json: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Json
+.PHONY : Json
+
+# fast build rule for target.
+Json/fast:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/build
+.PHONY : Json/fast
+
 sources/source.o: sources/source.cpp.o
 
 .PHONY : sources/source.o
 
 # target to build an object file
 sources/source.cpp.o:
-	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/sources/source.cpp.o
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/sources/source.cpp.o
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/source.cpp.o
 .PHONY : sources/source.cpp.o
 
 sources/source.i: sources/source.cpp.i
@@ -162,7 +222,8 @@ sources/source.i: sources/source.cpp.i
 
 # target to preprocess a source file
 sources/source.cpp.i:
-	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/sources/source.cpp.i
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/sources/source.cpp.i
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/source.cpp.i
 .PHONY : sources/source.cpp.i
 
 sources/source.s: sources/source.cpp.s
@@ -171,7 +232,8 @@ sources/source.s: sources/source.cpp.s
 
 # target to generate assembly for a file
 sources/source.cpp.s:
-	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/sources/source.cpp.s
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/sources/source.cpp.s
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/sources/source.cpp.s
 .PHONY : sources/source.cpp.s
 
 tests/test.o: tests/test.cpp.o
@@ -207,11 +269,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... tests"
 	@echo "... rebuild_cache"
+	@echo "... parser"
+	@echo "... install/local"
+	@echo "... Json"
 	@echo "... test"
 	@echo "... edit_cache"
-	@echo "... source"
-	@echo "... tests"
 	@echo "... sources/source.o"
 	@echo "... sources/source.i"
 	@echo "... sources/source.s"

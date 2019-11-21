@@ -228,7 +228,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 HUNTER_CONFIGURATION_TYPES:UNINITIALIZED=Release;Debug
 
 //No help, variable specified on the command line.
-HUNTER_SELF:UNINITIALIZED=/home/zamot/.hunter/_Base/Download/Hunter/0.23.218/9a3594a/Unpacked
+HUNTER_SELF:UNINITIALIZED=/home/zamot/.hunter/_Base/Download/Hunter/0.23.34/70287b1/Unpacked
 
 //Value Computed by CMake
 HunterToolchain_BINARY_DIR:STATIC=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/_3rdParty/Hunter/toolchain/_builds

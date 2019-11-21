@@ -1,5 +1,10 @@
+/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/install/strip.dir
+/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/install.dir
+/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/list_install_components.dir
+/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/tests.dir
 /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/parser.dir
+/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/install/local.dir
+/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/Json.dir
 /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/test.dir
 /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/source.dir
-/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/tests.dir

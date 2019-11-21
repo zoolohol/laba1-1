@@ -65,50 +65,13 @@ CMAKE_SOURCE_DIR = /cygdrive/c/Git/lab-01-parser
 CMAKE_BINARY_DIR = /cygdrive/c/Git/lab-01-parser/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/source.dir
-
-# All Build rule for target.
-CMakeFiles/source.dir/all:
-	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/depend
-	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target source"
-.PHONY : CMakeFiles/source.dir/all
-
-# Include target in all.
-all: CMakeFiles/source.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/source.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/source.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/source.dir/rule
-
-# Convenience name for target.
-source: CMakeFiles/source.dir/rule
-
-.PHONY : source
-
-# clean rule for target.
-CMakeFiles/source.dir/clean:
-	$(MAKE) -f CMakeFiles/source.dir/build.make CMakeFiles/source.dir/clean
-.PHONY : CMakeFiles/source.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/source.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: CMakeFiles/source.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/Json.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Include target in all.
@@ -135,6 +98,80 @@ CMakeFiles/tests.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/tests.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/parser.dir
+
+# All Build rule for target.
+CMakeFiles/parser.dir/all: CMakeFiles/Json.dir/all
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/depend
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target parser"
+.PHONY : CMakeFiles/parser.dir/all
+
+# Include target in all.
+all: CMakeFiles/parser.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/parser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/parser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/parser.dir/rule
+
+# Convenience name for target.
+parser: CMakeFiles/parser.dir/rule
+
+.PHONY : parser
+
+# clean rule for target.
+CMakeFiles/parser.dir/clean:
+	$(MAKE) -f CMakeFiles/parser.dir/build.make CMakeFiles/parser.dir/clean
+.PHONY : CMakeFiles/parser.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/parser.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/Json.dir
+
+# All Build rule for target.
+CMakeFiles/Json.dir/all:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/depend
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Json"
+.PHONY : CMakeFiles/Json.dir/all
+
+# Include target in all.
+all: CMakeFiles/Json.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/Json.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Json.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/Json.dir/rule
+
+# Convenience name for target.
+Json: CMakeFiles/Json.dir/rule
+
+.PHONY : Json
+
+# clean rule for target.
+CMakeFiles/Json.dir/clean:
+	$(MAKE) -f CMakeFiles/Json.dir/build.make CMakeFiles/Json.dir/clean
+.PHONY : CMakeFiles/Json.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/Json.dir/clean
 
 .PHONY : clean
 

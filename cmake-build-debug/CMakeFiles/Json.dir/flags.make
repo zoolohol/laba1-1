@@ -6,5 +6,5 @@ CXX_FLAGS =  -pedantic -Werror -Wall -Wextra -Wno-unused-command-line-argument -
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/cygdrive/c/Git/lab-01-parser/include -isystem /home/zamot/.hunter/_Base/70287b1/0a1854b/b499eae/Install/include 
+CXX_INCLUDES = -I/cygdrive/c/Git/lab-01-parser/include 
 
