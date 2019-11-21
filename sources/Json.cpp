@@ -123,7 +123,9 @@ void Json::create_vector(const string& s) {
             i = skip_spaces(i, s);
             this->json_arr.emplace_back(word);
         }
-        else if ((s[i] == 't' && s[i + 1] == 'r' && s[i + 2] == 'u' && s[i + 3] == 'e') || (s[i] == 'f' && s[i + 1] == 'a' &&s[i + 2] == 'l' && s[i + 3] == 's' && s[i + 4] == 'e')) {
+        else if ((s[i] == 't' && s[i + 1] == 'r' && s[i + 2] == 'u'
+        && s[i + 3] == 'e') || (s[i] == 'f' && s[i + 1] == 'a'
+        && s[i + 2] == 'l' && s[i + 3] == 's' && s[i + 4] == 'e')) {
             bool x;
             if(s[i] == 't') {
                 i += 4;
