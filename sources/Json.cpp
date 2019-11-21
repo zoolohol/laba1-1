@@ -96,8 +96,7 @@ string Json::read_word(unsigned int &i, const string& s) {
         i++;
         st = i;
     }
-    else
-        throw std::logic_error("string isn't valid!");
+    else throw std::logic_error("string isn't valid!");
     while (s[i] != '"') i++;
     key = s.substr(st, i - st);
     i++;
@@ -117,15 +116,14 @@ void Json::create_vector(const string& s) {
             Json obj(s1);
             this->json_arr.emplace_back(obj.json_map);
             i += s1.length();
-        }else if (s[i] == '\"') {
+        }
+        else if (s[i] == '\"') {
             string word;
             word = read_word(i, s);
             i = skip_spaces(i, s);
             this->json_arr.emplace_back(word);
         }
-        else if ((s[i] == 't' && s[i + 1] == 'r' && s[i + 2] == 'u'
-        && s[i + 3] == 'e') || (s[i] == 'f' && s[i + 1] == 'a'
-        && s[i + 2] == 'l' && s[i + 3] == 's' && s[i + 4] == 'e')) {
+        else if ((s[i] == 't' && s[i + 1] == 'r' && s[i + 2] == 'u' && s[i + 3] == 'e') || (s[i] == 'f' && s[i + 1] == 'a' && s[i + 2] == 'l' && s[i + 3] == 's' && s[i + 4] == 'e')) {
             bool x;
             if(s[i] == 't') {
                 i += 4;
