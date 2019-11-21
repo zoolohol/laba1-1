@@ -148,7 +148,6 @@ void Json::create_vector(const string& s) {
             i += s1.length();
         }
         else if(std::isdigit(static_cast<unsigned char>(s[i])) || (s[i] == '-'  && std::isdigit(static_cast<unsigned char>(s[i + 1])))) {
-            // is alpha or is symbol from std namespace
             string num = cut_num(i, s);
             i += num.length();
             double d = stod(num);
