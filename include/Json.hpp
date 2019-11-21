@@ -52,7 +52,6 @@ public:
     static unsigned int find_end(unsigned int i, const string& s);
 
     static string cut_num(unsigned int i, const string& s);
-
 };
 
 #endif // INCLUDE_JSON_HPP_
