@@ -1,3 +1,4 @@
+//Copyright 2019 <LinkIvan333>
 #include <Json.hpp>
 Json::Json(const string& s) {
     unsigned int i = 0;
@@ -5,14 +6,12 @@ Json::Json(const string& s) {
     if (s[i] == '{') {
         is_json_object = true;
         create_map(s);
-    }
-    else if (s[i] == '[') {
+    }else if (s[i] == '[') {
         is_json_array = true;
         create_vector(s);
     } else {
         throw std::logic_error("invalid data type");
     }
-
 }
 
 bool Json::is_array() const{
