@@ -1,4 +1,5 @@
-#ifndef UNTITLED_JSON_H
+//Copyright 2019 <LinkIvan333>
+#ifndef INCLUDE_JSON_HPP_
 #define UNTITLED_JSON_H
 
 #include <any>
@@ -30,7 +31,6 @@ private:
     void create_map(const string& s);
 
 public:
-
     Json(const string& s);
 
     bool is_array() const;
@@ -55,4 +55,4 @@ public:
 
 };
 
-#endif //UNTITLED_JSON_H
+#endif // INCLUDE_JSON_HPP_
