@@ -206,7 +206,8 @@ void Json::create_map(const string& s) {
             Json obj(s1);
             this->json_map[key] = obj.json_arr;
             i += s1.length();
-        } else if (std::isdigit(static_cast<unsigned char>(s[i])) || (s[i] == '-'  && std::isdigit(static_cast<unsigned char>(s[i + 1])))) {
+        } else if (std::isdigit(static_cast<unsigned char>(s[i])) ||
+        (s[i] == '-'  && std::isdigit(static_cast<unsigned char>(s[i + 1])))) {
             string num = cut_num(i, s);
             i += num.length();
             double d = stod(num);

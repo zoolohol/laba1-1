@@ -1,3 +1,4 @@
+//Copyright 2019 <LinkIvan333>
 #include <gtest/gtest.h>
 #include <Json.hpp>
 TEST(Parse, Text){
