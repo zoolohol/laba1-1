@@ -838,3 +838,45 @@ make[1]: Leaving directory '/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMak
     Feature record: CXX_FEATURE:0cxx_variable_templates
     Feature record: CXX_FEATURE:0cxx_variadic_macros
     Feature record: CXX_FEATURE:0cxx_variadic_templates
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe cmTC_76af7/fast 
+/usr/bin/make -f CMakeFiles/cmTC_76af7.dir/build.make CMakeFiles/cmTC_76af7.dir/build
+make[1]: Entering directory '/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_76af7.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_76af7.dir/CheckIncludeFile.c.o   -c /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_76af7.exe
+/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_76af7.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_76af7.dir/CheckIncludeFile.c.o  -o cmTC_76af7.exe -Wl,--out-implib,libcmTC_76af7.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+Determining if the pthread_create exist passed with the following output:
+Change Dir: /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make.exe cmTC_c500c/fast 
+/usr/bin/make -f CMakeFiles/cmTC_c500c.dir/build.make CMakeFiles/cmTC_c500c.dir/build
+make[1]: Entering directory '/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c500c.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_c500c.dir/CheckSymbolExists.c.o   -c /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_c500c.exe
+/cygdrive/c/Users/zamot/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E cmake_link_script CMakeFiles/cmTC_c500c.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,--enable-auto-import  CMakeFiles/cmTC_c500c.dir/CheckSymbolExists.c.o  -o cmTC_c500c.exe -Wl,--out-implib,libcmTC_c500c.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+make[1]: Leaving directory '/cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+File /cygdrive/c/Git/lab-01-parser/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
