@@ -22,5 +22,4 @@ int main() {
     }
     o << "]\n";
     o.close();
-    std::ifstream in1("file2.json");
 }
