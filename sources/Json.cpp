@@ -90,7 +90,7 @@ string Json::cut_num(unsigned int i, const string& s) {
 
 string Json::read_word(unsigned int &i, const string& s) {
     unsigned int st;
-    string key;
+    string word;
     i = skip_spaces(i, s);
     if (s[i] == '\"') {
         i++;
@@ -99,9 +99,9 @@ string Json::read_word(unsigned int &i, const string& s) {
         throw std::logic_error("string isn't valid!");
     }
     while (s[i] != '"') i++;
-    key = s.substr(st, i - st);
+    word = s.substr(st, i - st);
     i++;
-    return key;
+    return word;
 }
 
 void Json::create_vector(const string& s) {
