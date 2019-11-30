@@ -123,8 +123,8 @@ void Json::create_vector(const string& s) {
             word = read_word(i, s);
             i = skip_spaces(i, s);
             this->json_arr.emplace_back(word);
-        } else if (s.substr(i,4)=="true" || s.substr(i,5)=="false") {
-        if(s[i] == 't') {
+        } else if (s.substr(i, 4) == "true" || s.substr(i, 5) == "false") {
+        if (s[i] == 't') {
             if (s[i] == 't') {
                 i += 4;
                 this->json_arr.emplace_back(true);
@@ -183,12 +183,11 @@ void Json::create_map(const string& s) {
             word = read_word(i, s);
             i = skip_spaces(i, s);
             this->json_map[key] = word;
-        } else if (s.substr(i,4)=="true" || s.substr(i,5)=="false") {
-            if(s[i] == 't') {
+        } else if (s.substr(i, 4) == "true" || s.substr(i, 5) == "false") {
+            if (s[i] == 't') {
                 i += 4;
                 this->json_map[key] = true;
-            }
-            else {
+            } else {
                 i += 5;
                 this->json_map[key] = false;
             }

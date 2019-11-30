@@ -8,6 +8,6 @@ int main() {
         Json object = Json::parse(text);
         cout << std::endl;
         if (object.is_object())
-            cout << "Yes"<<std::endl;
+            cout << "Yes";
     return 0;
 }
