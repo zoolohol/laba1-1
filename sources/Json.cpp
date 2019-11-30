@@ -196,7 +196,6 @@ void Json::create_map(const string& s) {
             unsigned int  n = find_end(i, s);
             if ( n == s.length())
                 throw std::logic_error("string is not valid");
-
             s1 = s.substr(i, n - i + 1);
             Json obj(s1);
             this->json_map[key] = obj.json_arr;
