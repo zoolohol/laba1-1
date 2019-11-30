@@ -83,6 +83,7 @@ unsigned int Json::find_end(unsigned int i, const string& s) {
 string Json::cut_num(unsigned int i, const string& s) {
     unsigned int st = i;
     string num;
+    i++;
     while (isdigit(static_cast<unsigned char>(s[i]))) i++;
     num = s.substr(st, i - st);
     return num;
@@ -122,18 +123,16 @@ void Json::create_vector(const string& s) {
             word = read_word(i, s);
             i = skip_spaces(i, s);
             this->json_arr.emplace_back(word);
-        } else if ((s[i] == 't' && s[i + 1] == 'r' && s[i + 2] == 'u'
-        && s[i + 3] == 'e') || (s[i] == 'f' && s[i + 1] == 'a'
-        && s[i + 2] == 'l' && s[i + 3] == 's' && s[i + 4] == 'e')) {
-            bool x;
+        } else if (s.substr(i,4)=="true" || s.substr(i,5)=="false") {
+        if(s[i] == 't') {
             if (s[i] == 't') {
                 i += 4;
-                x = true;
+                this->json_arr.emplace_back(true);
             } else {
                 i += 5;
-                x = false;
+                this->json_arr.emplace_back(false);
             }
-            this->json_arr.emplace_back(x);
+        }
         } else if (s[i] == '[') {
             string s1;
             unsigned int n = find_end(i, s);
@@ -184,18 +183,15 @@ void Json::create_map(const string& s) {
             word = read_word(i, s);
             i = skip_spaces(i, s);
             this->json_map[key] = word;
-        } else if ((s[i] == 't' && s[i + 1] == 'r' && s[i + 2] == 'u'
-        && s[i + 3] == 'e') || (s[i] == 'f' && s[i + 1] == 'a'
-        && s[i + 2] == 'l' && s[i + 3] == 's' && s[i + 4] == 'e')) {
-            bool x;
-            if (s[i] == 't') {
+        } else if (s.substr(i,4)=="true" || s.substr(i,5)=="false") {
+            if(s[i] == 't') {
                 i += 4;
-                x = true;
-            } else {
-                i += 5;
-                x = false;
+                this->json_map[key] = true;
             }
-            this->json_map[key] = x;
+            else {
+                i += 5;
+                this->json_map[key] = false;
+            }
         } else if (s[i] == '[') {
             string s1;
             unsigned int  n = find_end(i, s);
